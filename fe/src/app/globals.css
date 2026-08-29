@@ -128,3 +128,29 @@
     @apply font-sans;
   }
 }
+
+.portfolio-background {
+  background-image: none;
+}
+
+.dark .portfolio-background {
+  background-image: radial-gradient(circle at 50% -5%, rgba(6, 182, 212, 0.16), transparent 34%);
+  background-size: auto;
+  background-position: center top;
+}
+
+.matrix-rain {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.55;
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+}
+
+.portfolio-background > :not(.matrix-rain) {
+  position: relative;
+  z-index: 1;
+}

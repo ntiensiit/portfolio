@@ -5,10 +5,12 @@ import Nav from "@/components/Nav";
 import Projects from "@/components/Projects";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import Welcome from "@/components/Welcome";
+import MatrixRain from "@/components/MatrixRain";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col bg-slate-50 font-sans dark:bg-[#0a0f1a]">
+    <div className="portfolio-background flex flex-1 flex-col bg-slate-50 font-sans dark:bg-[#0a0f1a]">
+      <MatrixRain />
       <Nav />
       <main className="flex w-full max-w-4xl flex-col pt-0 mx-auto">
         <Welcome />
