@@ -1,12 +1,13 @@
+const projects = [
+  { title: "Project One", description: "A short description of the first project." },
+  { title: "Project Two", description: "A short description of the second project." },
+];
+
 export default function Projects() {
-  const projects = [
-    { title: "Project One", description: "A short description of the first project." },
-    { title: "Project Two", description: "A short description of the second project." },
-  ];
 
   return (
-    <section id="projects" className="py-16 px-6">
-      <h2 className="text-3xl font-semibold mb-4">Projects</h2>
+    <section id="projects" className="px-6 py-16 lg:-ml-[5%] lg:w-[110%]">
+      <h2 className="mb-4 text-center text-3xl font-semibold">Projects</h2>
       <div className="grid gap-6 sm:grid-cols-2">
         {projects.map((project) => (
           <article
