@@ -1,0 +1,19 @@
+# Render Blueprint — deploys the Next.js app in the `fe/` subdirectory
+# Uses: npx render blueprint apply  (or push render.yaml to the repo)
+
+databases: []
+
+services:
+  - type: web
+    name: portfolio-fe
+    runtime: node
+    rootDir: fe
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
