@@ -2,11 +2,11 @@ import { Briefcase, ChevronRight, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    role: "Software Developer",
+    role: "AI Engineer",
     company: "Company Name",
     period: "2022 - Present",
-    points: ["Built and maintained web applications using React and Next.js."],
-    tags: ["React", "Next.js"],
+    points: ["Built and maintained intelligent applications using machine learning and generative AI."],
+    tags: ["Python", "Machine Learning", "Generative AI"],
   },
 ];
 

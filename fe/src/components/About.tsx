@@ -8,7 +8,8 @@ export default function About () {
         <div>
           <div className="rounded-lg border border-black/10 p-6 shadow-sm dark:border-white/10">
             <p className="text-lg text-zinc-600 dark:text-zinc-400">
-              Hello! I&apos;m a passionate developer building modern web experiences.
+              Hello! I&apos;m an AI Engineer focused on building practical machine learning,
+              generative AI, and computer vision solutions.
             </p>
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm uppercase tracking-widest text-neutral-900 dark:text-white">
