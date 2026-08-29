@@ -22,18 +22,18 @@ export default function Skills() {
       {skills.map((skill) => (
         <article
           key={skill.category}
-          className="group rounded-lg border border-black/10 shadow-sm transition-all duration-300 hover:border-zinc-400 hover:shadow-lg dark:border-white/10 dark:hover:border-zinc-600"
+          className="group rounded-lg border border-slate-200 shadow-sm transition-all duration-300 hover:border-slate-400 hover:shadow-lg dark:border-cyan-500/20 dark:hover:border-cyan-400"
         >
           <div className="p-4">
             <div className="flex items-start gap-3">
-              <div className="rounded-lg bg-zinc-100 p-2 text-zinc-700 transition-colors group-hover:bg-zinc-900 group-hover:text-white dark:bg-zinc-800 dark:text-zinc-300 dark:group-hover:bg-white dark:group-hover:text-zinc-900">
+              <div className="rounded-lg bg-slate-100 p-2 text-slate-700 transition-colors group-hover:bg-slate-800 group-hover:text-white dark:bg-cyan-950 dark:text-cyan-300 dark:group-hover:bg-cyan-500 dark:group-hover:text-slate-900">
                 <skill.icon className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+                <h3 className="text-sm font-semibold text-slate-800 dark:text-cyan-50">
                 {skill.category}
                 </h3>
-                <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
                   {skill.items.join(", ")}
                 </p>
               </div>

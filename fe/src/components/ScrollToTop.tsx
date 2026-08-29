@@ -7,7 +7,7 @@ export default function ScrollToTopButton() {
       smooth
       top={300}
       component={
-        <span className="whitespace-nowrap text-sm leading-none text-zinc-500 dark:text-zinc-400">
+        <span className="whitespace-nowrap text-sm leading-none text-slate-500 dark:text-slate-400">
           SCROLL TO TOP &uarr;
         </span>
       }
@@ -19,7 +19,7 @@ export default function ScrollToTopButton() {
         background: "transparent",
         border: "none",
         boxShadow: "none",
-        color: "#71717a",
+        color: "#64748b",
       }}
     />
   );

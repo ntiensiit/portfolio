@@ -12,32 +12,32 @@ const certificates = [
 export default function Certificates() {
   return (
     <section id="certificates" className="py-16">
-      <h3 className="mb-6 flex items-center gap-2 text-xl font-bold">
-        <Award className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
+      <h3 className="mb-6 flex items-center gap-2 text-xl font-bold text-white">
+        <Award className="h-5 w-5 text-slate-500 dark:text-cyan-400" />
         Certificates
       </h3>
       <ul className="grid gap-4 md:grid-cols-2">
         {certificates.map((certificate) => (
           <li
             key={certificate.name}
-            className="flex items-center justify-between rounded-lg border border-black/10 p-4 transition-colors hover:border-zinc-400 dark:border-white/10 dark:hover:border-zinc-600"
+            className="flex items-center justify-between rounded-lg border border-slate-200 p-4 transition-colors hover:border-slate-400 dark:border-cyan-500/20 dark:hover:border-cyan-400"
           >
             <div>
               <a
                 href={certificate.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-zinc-900 dark:text-zinc-50"
+                className="text-sm font-medium text-slate-800 dark:text-white"
               >
                 {certificate.name}
               </a>
               {certificate.detail && (
-                <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400">
+                <p className="font-mono text-sm text-white">
                   {certificate.detail}
                 </p>
               )}
             </div>
-            <span className="ml-4 shrink-0 text-xs text-zinc-500 dark:text-zinc-400">
+            <span className="ml-4 shrink-0 text-xs text-slate-400 dark:text-slate-500">
               {certificate.date}
             </span>
           </li>

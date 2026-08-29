@@ -10,15 +10,15 @@ export default function Nav() {
   const sectionId = (label: string) => label.toLowerCase();
 
   const socials = [
-    { label: "GitHub", href: "https://github.com/ntiensiit", icon: FaGithub },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/nguyen-tien-si-489bb136b", icon: FaLinkedin },
-    { label: "Email", href: "mailto:ntiensi.it@gmail.com", icon: Mail },
+    { label: "GitHub", href: "https://github.com/ntiensiit", icon: FaGithub, colorClass: "text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/nguyen-tien-si-489bb136b", icon: FaLinkedin, colorClass: "text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300" },
+    { label: "Email", href: "mailto:ntiensi.it@gmail.com", icon: Mail, colorClass: "text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300" },
   ];
 
   return (
-    <nav className="sticky top-0 z-10 w-full border-b border-black/10 bg-zinc-50/90 backdrop-blur dark:border-white/10 dark:bg-black/80">
+    <nav className="sticky top-0 z-10 w-full border-b border-slate-200 bg-slate-50/90 backdrop-blur dark:border-cyan-500/20 dark:bg-[#0a0f1a]/80">
       <div className="relative mx-auto flex w-full items-center justify-between px-6 py-4">
-        <a href="#welcome" className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+        <a href="#welcome" className="text-lg font-semibold text-slate-800 dark:text-cyan-400">
           NTIENSIIT
         </a>
 
@@ -28,7 +28,7 @@ export default function Nav() {
             <li key={link}>
               <a
                 href={`#${sectionId(link)}`}
-                className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
+                className="text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-300 dark:hover:text-cyan-400"
               >
                 {link}
               </a>
@@ -43,18 +43,18 @@ export default function Nav() {
             download
             aria-label="Download resume"
             title="Download resume"
-            className="inline-flex items-center rounded-md py-1.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-black/5 dark:text-zinc-200 dark:hover:bg-white/10"
+            className="inline-flex items-center rounded-md bg-cyan-500 px-2 py-1.5 text-sm font-medium text-white transition-colors hover:bg-cyan-600"
           >
             <FileText className="h-4 w-4" />
           </a>
-          {socials.map(({ label, href, icon: Icon }) => (
+          {socials.map(({ label, href, icon: Icon, colorClass }) => (
             <a
               key={label}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
+              className={`transition-colors ${colorClass}`}
             >
               <Icon className="h-5 w-5" />
             </a>
@@ -64,7 +64,7 @@ export default function Nav() {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-zinc-700 dark:text-zinc-300"
+          className="md:hidden text-slate-700 dark:text-slate-300"
           aria-label="Toggle menu"
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -79,23 +79,23 @@ export default function Nav() {
               <a
                 href={`#${sectionId(link)}`}
                 onClick={() => setOpen(false)}
-                className="block rounded-md px-2 py-2 text-zinc-600 hover:bg-black/5 dark:text-zinc-400 dark:hover:bg-white/10"
+                className="block rounded-md px-2 py-2 text-slate-600 hover:bg-slate-200/50 dark:text-slate-300 dark:hover:bg-cyan-500/10"
               >
                 {link}
               </a>
             </li>
           ))}
           <li className="mt-2 flex gap-5 px-2">
-            {socials.map(({ label, href, icon: Icon }) => (
+            {socials.map(({ label, href, icon: Icon, colorClass }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
-              >
-                <Icon className="h-5 w-5" />
+              className={`transition-colors ${colorClass}`}
+            >
+              <Icon className="h-5 w-5" />
               </a>
             ))}
           </li>
@@ -106,9 +106,10 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               aria-label="Download resume"
               title="Download resume"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-black/5 dark:text-zinc-200 dark:hover:bg-white/10"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-cyan-500 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-cyan-600"
             >
               <FileText className="h-4 w-4" />
+              Resume
             </a>
           </li>
         </ul>
