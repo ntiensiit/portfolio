@@ -1,6 +1,14 @@
 const projects = [
-  { title: "Project One", description: "A short description of the first project." },
-  { title: "Project Two", description: "A short description of the second project." },
+  {
+    title: "Synthetic Images for Robotics Object Detection",
+    href: "https://demo.edufun.ai/p/team-456-synthetic-dataset-generator-sim2real-ai20k-170",
+    description: "Generated 3,500 labeled PyBullet images across seven household-object classes and evaluated synthetic, real, and mixed YOLO training datasets. The synthetic-data model achieved 0.924 mAP50 versus 0.875 for real-only training.",
+  },
+  {
+    title: "AI Legal Radar",
+    href: "https://github.com/Datghb/Parasitic-",
+    description: "A misinformation-monitoring platform with LLM extraction and BM25 matching. It classifies claims into three labels and provides crawling, review queues, human overrides, and append-only audit trails.",
+  },
 ];
 
 export default function Projects() {
@@ -14,7 +22,11 @@ export default function Projects() {
             key={project.title}
             className="rounded-lg border border-slate-200 p-6 shadow-sm transition-all duration-300 hover:border-slate-400 dark:border-cyan-500/20 dark:hover:border-cyan-400"
           >
-            <h3 className="text-xl font-medium text-slate-800 dark:text-cyan-50">{project.title}</h3>
+            <h3 className="text-xl font-medium text-slate-800 dark:text-cyan-50">
+              <a href={project.href} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 dark:hover:text-cyan-300">
+                {project.title}
+              </a>
+            </h3>
             <p className="mt-2 text-gray-500 dark:text-gray-400">{project.description}</p>
           </article>
         ))}

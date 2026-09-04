@@ -3,11 +3,23 @@ import Certificates from "./Certificates";
 
 const educations = [
   {
-    degree: "Bachelor of Information Technology",
-    school: "University of Transport - Ho Chi Minh City, UTH",
+    degree: "SFIA Certificate",
+    school: "VinUniversity - AI Practical Talent Development Program",
+    period: "May 2026 - July 2026",
+    highlights: ["SFIA Level 4"],
+    focus: ["Artificial Intelligence"],
+  },
+  {
+    degree: "Bachelor's Degree in Computer Science",
+    school: "University of Transport Ho Chi Minh City - Major in Artificial Intelligence",
     period: "2022 - 2026",
-    highlights: ["Graduated in 3.5 years"],
-    focus: ["Computer Vision Applications"],
+    highlights: [
+      "Graduated in 3.5 years",
+    ],
+    focus: [
+      "Artificial Intelligence",
+      "Computer Vision Applications",
+    ],
   },
 ];
 

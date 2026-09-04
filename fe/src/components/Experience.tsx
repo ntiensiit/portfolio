@@ -2,11 +2,17 @@ import { Briefcase, ChevronRight, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    role: "AI Engineer",
-    company: "Company Name",
-    period: "2022 - Present",
-    points: ["Built and maintained intelligent applications using machine learning and generative AI."],
-    tags: ["Python", "Machine Learning", "Generative AI"],
+    role: "VSLAM Intern",
+    company: "VinRobotics",
+    period: "July 2026 - August 2026",
+    points: [
+      "Built a synthetic data generation pipeline for robotics perception on ROS 2-based Visual SLAM and LeRobot for VLN models.",
+      "Designed a modular SLAM node interface and plugin architecture for interchangeable SLAM backends.",
+      "Investigated VSLAM data flow across camera images, CameraInfo, TF, odometry, pose, and trajectory outputs.",
+      "Built rosbag-based evaluation workflows for synchronization, trajectory generation, runtime behavior, and system performance.",
+      "Analyzed ROS 2 communication bottlenecks involving message synchronization, callbacks, topic frequency, and recording overhead.",
+    ],
+    tags: ["ROS 2", "Visual SLAM", "LeRobot", "Synthetic Data"],
   },
 ];
 
@@ -21,7 +27,7 @@ export default function Experience() {
             <div className="md:col-span-9">
               <h3 className="mb-1 flex items-center gap-2 text-2xl font-bold text-slate-800 dark:text-cyan-50"><Briefcase className="h-4 w-4" />{experience.role}</h3>
               <div className="font-medium text-slate-500 dark:text-cyan-400">{experience.company}</div>
-              <div className="mt-2 flex items-center gap-1 text-sm text-slate-500"><MapPin className="h-3 w-3" />Ho Chi Minh City, Vietnam</div>
+              <div className="mt-2 flex items-center gap-1 text-sm text-slate-500"><MapPin className="h-3 w-3" />Ha Noi, Vietnam</div>
               <ul className="mt-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">{experience.points.map((point) => <li key={point} className="flex items-start gap-2"><ChevronRight className="mt-0.5 h-4 w-4 shrink-0" /><span>{point}</span></li>)}</ul>
               <div className="mt-3 flex flex-wrap gap-2">{experience.tags.map((tag) => <span key={tag} className="rounded-full border border-slate-200 px-2 py-1 font-mono text-xs font-bold text-white dark:border-cyan-500/20">{tag}</span>)}</div>
             </div>

@@ -1,6 +1,7 @@
 import { Award } from "lucide-react";
 
 const certificates = [
+  { name: "SFIA Certificate", date: "08/2026", href: "certificates" },
   { name: "TOEIC", detail: "935/990", date: "05/2026", href: "https://example.com" },
   { name: "Build a Secure Google Cloud Network Skill Badge", date: "01/2026", href: "https://www.credly.com/badges/59dd7c4b-620d-45dd-8d6d-eacb7c4ff055" },
   { name: "Google Cloud Computing Foundations Certificate", date: "01/2026", href: "https://www.credly.com/badges/4262d16c-559d-4ef7-82f3-82a0fcd1073c" },
