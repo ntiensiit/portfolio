@@ -150,7 +150,7 @@
   mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
 }
 
-.portfolio-background > :not(.matrix-rain) {
+.portfolio-background > :not(.matrix-rain):not(nav) {
   position: relative;
   z-index: 1;
 }
