@@ -2,12 +2,14 @@ import {
   Code2,
   Layers,
   Database,
+  Wrench,
 } from "lucide-react";
 
 const skills = [
   { category: "Languages", icon: Code2, items: ["C#", "JavaScript", "SQL", "HTML/CSS"] },
   { category: "Framework", icon: Layers, items: ["ASP.NET Core", "Entity Framework Core", "React"] },
-  { category: "Data & Tools", icon: Database, items: ["SQL Server", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Git", "GitLab", "CI/CD", "Docker", "Jira", "Agile/Scrum"] },
+  { category: "Data", icon: Database, items: ["SQL Server", "PostgreSQL", "MySQL", "MongoDB", "Redis"] },
+  { category: "Tools", icon: Wrench, items: ["Git", "GitLab", "CI/CD", "Docker", "Jira", "Agile/Scrum"] },
 ];
 
 export default function Skills() {

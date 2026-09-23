@@ -39,7 +39,7 @@ export default function Nav() {
         {/* Resume + social icons */}
         <div className="hidden items-center gap-4 md:flex">
           <a
-            href="https://drive.google.com/file/d/18Rxm3UiYRL0XGCbYWEMkdUtULcMpiTU4/view"
+            href="https://drive.google.com/file/d/1Xm4Iz3gwmZMCXzctlVR6NfSPiUgQqk4H"
             download
             aria-label="Download resume"
             title="Download resume"

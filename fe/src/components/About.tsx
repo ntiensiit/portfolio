@@ -7,15 +7,13 @@ export default function About () {
       <div className="grid gap-10 lg:grid-cols-2">
         <div>
           <div className="rounded-lg border border-slate-200 p-6 shadow-sm transition-all duration-300 hover:border-slate-400 hover:shadow-lg dark:border-cyan-500/20 dark:hover:border-cyan-400">
-             <p className="text-lg text-slate-600 dark:text-white">
-               Hello! I&apos;m a Software Engineer focused on building practical web applications
-               with ASP.NET Core, React, and SQL Server — REST APIs, auth/CRUD modules,
-               and optimized data schemas.
-             </p>
+              <p className="text-lg text-slate-600 dark:text-white">
+                Software Engineer (C#, JavaScript, SQL) specializing in enterprise web apps with ASP.NET Core, React, and SQL Server. Built REST APIs + auth/CRUD modules and optimized schemas in Agile teams at VinSOC, Bosch and Enmasys. Seeking Junior Software Engineer role.
+              </p>
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm uppercase tracking-widest text-slate-800 dark:text-cyan-50">
             <a
-              href="https://drive.google.com/file/d/18Rxm3UiYRL0XGCbYWEMkdUtULcMpiTU4/view"
+              href="https://drive.google.com/file/d/1Xm4Iz3gwmZMCXzctlVR6NfSPiUgQqk4H"
               target="_blank"
               rel="noopener noreferrer"
               className="border-b-2 border-transparent text-cyan-600 transition-colors duration-300 hover:border-cyan-600 dark:text-cyan-400 dark:hover:border-cyan-400"

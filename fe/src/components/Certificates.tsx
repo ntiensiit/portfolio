@@ -2,8 +2,9 @@ import { Award } from "lucide-react";
 
 const certificates = [
   { name: "SFIA Certificate L4", date: "Jul 2026", href: "https://drive.google.com/file/d/1IeRvwWkzj805sKim3_uCX4rFpy6uAxhK/view" },
-  { name: "TOEIC", detail: "935/990", date: "2026", href: "https://drive.google.com/file/d/1oHQPTSmH23osVNHlo2OUuD8khfAdc4g4/view" },
   { name: "Google Cloud Computing Foundations", date: "2026", href: "https://www.credly.com/badges/4262d16c-559d-4ef7-82f3-82a0fcd1073c" },
+  { name: "TOEIC", detail: "935/990", date: "2026", href: "https://drive.google.com/file/d/1oHQPTSmH23osVNHlo2OUuD8khfAdc4g4/view" },
+  { name: "Excellent scholarship (2 semesters)", date: "2022-2026" },
 ];
 
 export default function Certificates() {
