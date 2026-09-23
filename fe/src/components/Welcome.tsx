@@ -7,8 +7,8 @@ export default function Welcome() {
         Hi, I&apos;m <span className="text-cyan-600 dark:text-cyan-400">NTIENSIIT</span>
       </h1>
       <p className="mt-4 text-xl text-slate-600 dark:text-slate-300 sm:text-2xl">
-        AI Engineer specializing in Machine Learning, Generative AI, and Computer Vision,
-        building intelligent and reliable solutions.
+        Software Engineer specializing in ASP.NET Core, React, and SQL Server —
+        building REST APIs and web apps.
       </p>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <a href="#about" className="text-slate-400 transition-colors hover:text-slate-700 dark:text-slate-400 dark:hover:text-cyan-400" aria-label="Scroll to About">

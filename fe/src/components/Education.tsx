@@ -4,22 +4,17 @@ import Certificates from "./Certificates";
 const educations = [
   {
     degree: "SFIA Certificate",
-    school: "VinUniversity - AI Practical Talent Development Program",
+    school: "VinUniversity",
     period: "May 2026 - July 2026",
     highlights: ["SFIA Level 4"],
-    focus: ["Artificial Intelligence"],
+    focus: ["Software Engineering"],
   },
   {
     degree: "Bachelor's Degree in Computer Science",
-    school: "University of Transport Ho Chi Minh City - Major in Artificial Intelligence",
+    school: "University of Transport Ho Chi Minh City",
     period: "2022 - 2026",
-    highlights: [
-      "Graduated in 3.5 years",
-    ],
-    focus: [
-      "Artificial Intelligence",
-      "Computer Vision Applications",
-    ],
+    highlights: ["GPA: 3.49/4.0"],
+    focus: ["Web Applications", "Software Engineering"],
   },
 ];
 

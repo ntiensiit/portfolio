@@ -1,19 +1,13 @@
 import {
-  BrainCircuit,
-  Cloud,
   Code2,
+  Layers,
   Database,
-  ScanEye,
-  Sparkles,
 } from "lucide-react";
 
 const skills = [
-  { category: "Python & ML", icon: Code2, items: ["PyTorch", "TensorFlow", "Transformers"] },
-  { category: "Deep Learning", icon: BrainCircuit, items: ["CNN", "RNN", "Reinforcement Learning"] },
-  { category: "Data Engineering", icon: Database, items: ["ETL", "Vector DBs", "Embeddings"] },
-  { category: "LLMs & GenAI", icon: Sparkles, items: ["Fine-tuning", "RAG", "Agents"] },
-  { category: "Computer Vision", icon: ScanEye, items: ["Detection", "Segmentation", "OCR"] },
-  { category: "Cloud & MLOps", icon: Cloud, items: ["AWS", "Docker", "CI/CD"] },
+  { category: "Languages", icon: Code2, items: ["C#", "JavaScript", "SQL", "HTML/CSS"] },
+  { category: "Framework", icon: Layers, items: ["ASP.NET Core", "Entity Framework Core", "React"] },
+  { category: "Data & Tools", icon: Database, items: ["SQL Server", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Git", "GitLab", "CI/CD", "Docker", "Jira", "Agile/Scrum"] },
 ];
 
 export default function Skills() {

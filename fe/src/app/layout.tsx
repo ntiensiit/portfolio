@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NTIENSIIT | AI Engineer Portfolio",
-  description: "AI Engineer specializing in Machine Learning, Generative AI, and Computer Vision, building intelligent and reliable solutions.",
+  title: "NTIENSIIT | Software Engineer Portfolio",
+  description: "Software Engineer specializing in ASP.NET Core, React, and SQL Server — building REST APIs, web apps, and data-driven solutions.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

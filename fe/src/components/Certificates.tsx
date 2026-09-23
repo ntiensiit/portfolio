@@ -1,13 +1,9 @@
 import { Award } from "lucide-react";
 
 const certificates = [
-  { name: "SFIA Certificate", date: "08/2026", href: "certificates" },
-  { name: "TOEIC", detail: "935/990", date: "05/2026", href: "https://example.com" },
-  { name: "Build a Secure Google Cloud Network Skill Badge", date: "01/2026", href: "https://www.credly.com/badges/59dd7c4b-620d-45dd-8d6d-eacb7c4ff055" },
-  { name: "Google Cloud Computing Foundations Certificate", date: "01/2026", href: "https://www.credly.com/badges/4262d16c-559d-4ef7-82f3-82a0fcd1073c" },
-  { name: "Implement Load Balancing on Compute Engine Skill Badge", date: "01/2026", href: "https://www.credly.com/badges/d940e5ab-1f64-4be6-a6ef-8dce283b200a" },
-  { name: "Prepare Data for ML APIs on Google Cloud Skill Badge", date: "01/2026", href: "https://www.credly.com/badges/6011d096-e8d3-4468-b1f5-e03aae3c705e" },
-  { name: "Set Up an App Dev Environment on Google Cloud Skill Badge", date: "01/2026", href: "https://www.credly.com/badges/41224be6-c844-4266-bdec-03d98ff87b1b" },
+  { name: "SFIA Certificate L4", date: "Jul 2026", href: "https://drive.google.com/file/d/1IeRvwWkzj805sKim3_uCX4rFpy6uAxhK/view" },
+  { name: "TOEIC", detail: "935/990", date: "2026", href: "https://drive.google.com/file/d/1oHQPTSmH23osVNHlo2OUuD8khfAdc4g4/view" },
+  { name: "Google Cloud Computing Foundations", date: "2026", href: "https://www.credly.com/badges/4262d16c-559d-4ef7-82f3-82a0fcd1073c" },
 ];
 
 export default function Certificates() {

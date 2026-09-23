@@ -5,7 +5,7 @@ databases: []
 
 services:
   - type: web
-    name: ntiensiit-ai
+    name: ntiensiit-se
     runtime: node
     rootDir: fe
     plan: free
