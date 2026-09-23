@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || "/resume.pdf";
 
   const links = ["About", "Experience", "Projects", "Education"];
   const sectionId = (label: string) => label.toLowerCase();
@@ -39,8 +40,10 @@ export default function Nav() {
         {/* Resume + social icons */}
         <div className="hidden items-center gap-4 md:flex">
           <a
-            href="https://drive.google.com/file/d/1Xm4Iz3gwmZMCXzctlVR6NfSPiUgQqk4H"
-            download
+            href={resumeUrl}
+            target={resumeUrl.startsWith("http") ? "_blank" : undefined}
+            rel={resumeUrl.startsWith("http") ? "noopener noreferrer" : undefined}
+            download={!resumeUrl.startsWith("http") ? true : undefined}
             aria-label="Download resume"
             title="Download resume"
             className="inline-flex items-center rounded-md bg-cyan-500 px-2 py-1.5 text-sm font-medium text-white transition-colors hover:bg-cyan-600"
@@ -101,8 +104,10 @@ export default function Nav() {
           </li>
           <li className="mt-3 px-2">
             <a
-              href="/resume.pdf"
-              download
+              href={resumeUrl}
+              target={resumeUrl.startsWith("http") ? "_blank" : undefined}
+              rel={resumeUrl.startsWith("http") ? "noopener noreferrer" : undefined}
+              download={!resumeUrl.startsWith("http") ? true : undefined}
               onClick={() => setOpen(false)}
               aria-label="Download resume"
               title="Download resume"

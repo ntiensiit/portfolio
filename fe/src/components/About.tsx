@@ -1,6 +1,7 @@
 import Skills from "./Skills";
 
 export default function About () {
+  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || "/resume.pdf";
   return (
     <section id="about" className="w-full py-16 px-6 lg:w-[110%] lg:-ml-[5%]">
       <h2 className="mb-8 text-center text-3xl font-semibold bg-gradient-to-r from-cyan-400 to-cyan-600 bg-clip-text text-transparent dark:from-cyan-300 dark:to-cyan-500">About Me</h2>
@@ -13,7 +14,7 @@ export default function About () {
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm uppercase tracking-widest text-slate-800 dark:text-cyan-50">
             <a
-              href="https://drive.google.com/file/d/1Xm4Iz3gwmZMCXzctlVR6NfSPiUgQqk4H"
+              href={resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="border-b-2 border-transparent text-cyan-600 transition-colors duration-300 hover:border-cyan-600 dark:text-cyan-400 dark:hover:border-cyan-400"
